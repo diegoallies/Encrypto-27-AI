@@ -189,10 +189,11 @@ cmd({
 
 
 // Audio Download Command here
+
 cmd({
 pattern: "playpro",
 alias: ["ytapro", "ytplaypro"],
-react: '🦄',
+react: '🪄',
 desc: "Download audio from YouTube by searching for keywords.",
 category: "music",
 use: ".playpro <keywords>",
@@ -215,7 +216,7 @@ const video = results.videos[0];
 const url = video.url;
 const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
 
-await reply("> SubZero Downloading Song... Please Wait...");
+await reply("> SubZero Searching For The Song...");
 
 const response = await axios.get(apiURL);
 if (!response.data.success) {
@@ -223,9 +224,9 @@ if (!response.data.success) {
 }
 
 const downloadURL = response.data.result.download_url;
-await reply("> SubZero Sending Song... Please Wait...");
+await reply("> SubZero Sending Song Wait...");
 
-await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mp4', ptt: false }, { quoted: msg });
+await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mpeg', ptt: false }, { quoted: msg });
 
 await reply(" Song sent successfully!");
 
@@ -234,7 +235,6 @@ console.error(error);
 reply(" An error occurred while processing your request.");
 }
 });
-
 /*const {
   cmd,
   commands
