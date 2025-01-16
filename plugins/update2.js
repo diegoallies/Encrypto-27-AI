@@ -5,7 +5,7 @@ const { execSync } = require('child_process');
 const { cmd } = require('../command');
 
 cmd({
-  pattern: "update",
+  pattern: "update2",
   react: "💖",
   desc: "Update bot",
   category: "system",
