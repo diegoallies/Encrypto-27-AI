@@ -8,7 +8,94 @@
 // Wanna Use My Codes???
 // Give Credits Yah, Mr Frank
 
-const {
+
+const { cmd, commands } = require('../command');
+const yts = require("yt-search");
+const axios = require("axios");
+
+// Video Download Command
+cmd({
+  pattern: "videopro",
+  alias: ["ytvidpro", "ytvpro", 'ytvideopro'],
+  react: '✅',
+  desc: "Download videos from YouTube by searching for keywords.",
+  category: "video",
+  use: ".vidx <keywords>",
+  filename: __filename
+}, async (conn, msg, m, { from, args, reply }) => {
+  try {
+    const query = args.join(" ");
+    if (!query) {
+      return reply("*Please provide a video title or URL*");
+    }
+
+    reply("> © SubZero Generating Video... Please Wait...");
+
+    const results = await yts(query);
+    if (!results.videos || results.videos.length === 0) {
+      return reply("❌ No results found for \"" + query + "\".");
+    }
+
+    const video = results.videos[0];
+    const url = video.url;
+    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp4?url=" + url;
+
+    const response = await axios.get(apiURL);
+    if (!response.data.success) {
+      return reply("❌ Failed to fetch video for \"" + query + "\".");
+    }
+
+    const downloadURL = response.data.result.download_url;
+    await conn.sendMessage(from, { video: { url: downloadURL }, mimetype: "video/mp4" }, { quoted: msg });
+  } catch (error) {
+    console.error(error);
+    reply("❌ An error occurred while processing your request.");
+  }
+});
+
+// Audio Download Command
+cmd({
+  pattern: "playpro",
+  alias: ["ytapro", "ytplaypro"],
+  react: '✅',
+  desc: "Download audio from YouTube by searching for keywords.",
+  category: "music",
+  use: ".playpro <keywords>",
+  filename: __filename
+}, async (conn, msg, m, { from, args, reply }) => {
+  try {
+    const query = args.join(" ");
+    if (!query) {
+      return reply("*Please provide an audio title or URL*");
+    }
+
+    reply("> © SubZero Generating Song... Please Wait...");
+
+    const results = await yts(query);
+    if (!results.videos || results.videos.length === 0) {
+      return reply("❌ No results found for \"" + query + "\".");
+    }
+
+    const video = results.videos[0];
+    const url = video.url;
+    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
+
+    const response = await axios.get(apiURL);
+    if (!response.data.success) {
+      return reply("❌ Failed to fetch audio for \"" + query + "\".");
+    }
+
+    const downloadURL = response.data.result.download_url;
+    await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mp4', ptt: false }, { quoted: msg });
+  } catch (error) {
+    console.error(error);
+    reply("❌ An error occurred while processing your request.");
+  }
+});
+
+
+
+/*const {
   cmd,
   commands
 } = require('../command');
@@ -107,3 +194,4 @@ cmd({
     _0x31fd3f("❌ An error occurred while processing your request.");
   }
 });
+*/
