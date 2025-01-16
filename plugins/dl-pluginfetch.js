@@ -18,7 +18,7 @@ cmd({
       return reply("Please provide a filename");
     }
 
-    const repoUrl = 'https://raw.githubusercontent.com/mrfrank-ofc/SUBZERO-MD/main/plugins/';
+    const repoUrl = 'https://github.com/mrfrank-ofc/SUBZERO-MD/main/plugins/';
     const fileUrl = repoUrl + filename;
 
     const response = await axios.get(fileUrl, { responseType: 'arraybuffer' });
