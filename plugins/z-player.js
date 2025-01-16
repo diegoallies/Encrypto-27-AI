@@ -9,7 +9,8 @@
 // Give Credits Yah, Mr Frank
 
 
-const { cmd, commands } = require('../command');
+
+/*const { cmd, commands } = require('../command');
 const yts = require("yt-search");
 const axios = require("axios");
 
@@ -17,7 +18,7 @@ const axios = require("axios");
 cmd({
   pattern: "videopro",
   alias: ["ytvidpro", "ytvpro", 'ytvideopro'],
-  react: '✅',
+  react: '',
   desc: "Download videos from YouTube by searching for keywords.",
   category: "video",
   use: ".vidx <keywords>",
@@ -29,8 +30,8 @@ cmd({
       return reply("*Please provide a video title or URL*");
     }
 
-    reply("> © SubZero Generating Video... Please Wait...");
-
+    await reply("> © SubZero Searching Video... Please Wait...");
+    
     const results = await yts(query);
     if (!results.videos || results.videos.length === 0) {
       return reply("❌ No results found for \"" + query + "\".");
@@ -38,7 +39,9 @@ cmd({
 
     const video = results.videos[0];
     const url = video.url;
-    const apiURL = "https://api.giftedtech.web.id/api/download/dlmp4?apikey=gifted&url=" + url;
+    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp4?url=" + url;
+
+    await reply("> © SubZero Downloading Video... Please Wait...");
 
     const response = await axios.get(apiURL);
     if (!response.data.success) {
@@ -46,12 +49,63 @@ cmd({
     }
 
     const downloadURL = response.data.result.download_url;
+    await reply("> © SubZero Sending Video... Please Wait...");
+    
     await conn.sendMessage(from, { video: { url: downloadURL }, mimetype: "video/mp4" }, { quoted: msg });
+    
+    await reply("✅ Video sent successfully!");
   } catch (error) {
     console.error(error);
     reply("❌ An error occurred while processing your request.");
   }
 });
+
+// Audio Download Command
+cmd({
+  pattern: "playpro",
+  alias: ["ytapro", "ytplaypro"],
+  react: '',
+  desc: "Download audio from YouTube by searching for keywords.",
+  category: "music",
+  use: ".playpro <keywords>",
+  filename: __filename
+}, async (conn, msg, m, { from, args, reply }) => {
+  try {
+    const query = args.join(" ");
+    if (!query) {
+      return reply("*Please provide an audio title or URL*");
+    }
+
+    await reply("> © SubZero Searching Song... Please Wait...");
+    
+    const results = await yts(query);
+    if (!results.videos || results.videos.length === 0) {
+      return reply("❌ No results found for \"" + query + "\".");
+    }
+
+    const video = results.videos[0];
+    const url = video.url;
+    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
+
+    await reply("> © SubZero Downloading Song... Please Wait...");
+
+    const response = await axios.get(apiURL);
+    if (!response.data.success) {
+      return reply("❌ Failed to fetch audio for \"" + query + "\".");
+    }
+
+    const downloadURL = response.data.result.download_url;
+    await reply("> © SubZero Sending Song... Please Wait...");
+    
+    await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mp4', ptt: false }, { quoted: msg });
+    
+    await reply("✅ Song sent successfully!");
+  } catch (error) {
+    console.error(error);
+    reply("❌ An error occurred while processing your request.");
+  }
+});
+
 
 // Audio Download Command
 cmd({
@@ -81,19 +135,105 @@ cmd({
     const apiURL = "https://api.giftedtech.web.id/api/download/dlmp3?apikey=gifted&url=" + url;
 
     const response = await axios.get(apiURL);
+
+*/
+ const { cmd, commands } = require('../command');
+const yts = require("yt-search");
+const axios = require("axios");
+
+// Video Download Command here
+cmd({
+  pattern: "videopro",
+  alias: ["ytvidpro", "ytvpro", 'ytvideopro'],
+  react: '🚀',
+  desc: "Download videos from YouTube by searching for keywords.",
+  category: "video",
+  use: ".vidx <keywords>",
+  filename: __filename
+}, async (conn, msg, m, { from, args, reply }) => {
+  try {
+    const query = args.join(" ");
+    if (!query) {
+      return reply("*Please provide a video title or URL*");
+    }
+
+    await reply("> SubZero Searching Video... Please Wait...");
+    
+    const results = await yts(query);
+    if (!results.videos || results.videos.length === 0) {
+      return reply(" No results found for \"" + query + "\".");
+    }
+
+    const video = results.videos[0];
+    const url = video.url;
+    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp4?url=" + url;
+
+    await reply("> SubZero Downloading Video... Please Wait...");
+
+    const response = await axios.get(apiURL);
     if (!response.data.success) {
-      return reply("❌ Failed to fetch audio for \"" + query + "\".");
+      return reply(" Failed to fetch video for \"" + query + "\".");
     }
 
     const downloadURL = response.data.result.download_url;
-    await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mp4', ptt: false }, { quoted: msg });
+    await reply("> SubZero Sending Video... Please Wait...");
+    
+    await conn.sendMessage(from, { video: { url: downloadURL }, mimetype: "video/mp4" }, { quoted: msg });
+    
+    await reply(" Video sent successfully!");
   } catch (error) {
     console.error(error);
-    reply("❌ An error occurred while processing your request.");
+    reply(" An error occurred while processing your request.");
   }
 });
 
 
+// Audio Download Command here
+cmd({
+pattern: "playpro",
+alias: ["ytapro", "ytplaypro"],
+react: '🦄',
+desc: "Download audio from YouTube by searching for keywords.",
+category: "music",
+use: ".playpro <keywords>",
+filename: __filename
+}, async (conn, msg, m, { from, args, reply }) => {
+try {
+const query = args.join(" ");
+if (!query) {
+return reply("_Please provide an audio title or URL_");
+}
+
+await reply("> SubZero Searching Song... Please Wait...");
+
+const results = await yts(query);
+if (!results.videos || results.videos.length === 0) {
+  return reply(" No results found for \"" + query + "\".");
+}
+
+const video = results.videos[0];
+const url = video.url;
+const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
+
+await reply("> SubZero Downloading Song... Please Wait...");
+
+const response = await axios.get(apiURL);
+if (!response.data.success) {
+  return reply(" Failed to fetch audio for \"" + query + "\".");
+}
+
+const downloadURL = response.data.result.download_url;
+await reply("> SubZero Sending Song... Please Wait...");
+
+await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mp4', ptt: false }, { quoted: msg });
+
+await reply(" Song sent successfully!");
+
+} catch (error) {
+console.error(error);
+reply(" An error occurred while processing your request.");
+}
+});
 
 /*const {
   cmd,
