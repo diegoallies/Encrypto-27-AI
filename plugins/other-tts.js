@@ -265,7 +265,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 if(!q) return reply("Need some text.")
     const url = googleTTS.getAudioUrl(q, {
-  lang: 'hi-IN',
+  lang: 'en-US',
   slow: false,
   host: 'https://translate.google.com',
 })
