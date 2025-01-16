@@ -79,7 +79,7 @@ const readMore = more.repeat(4001)
 
 cmd({
     pattern: "support",
-    alias : "version",
+    alias : "base",
     desc: "subzero menu",
     category: "menu",
     react: "📡",
