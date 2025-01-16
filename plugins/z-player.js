@@ -38,7 +38,7 @@ cmd({
 
     const video = results.videos[0];
     const url = video.url;
-    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp4?url=" + url;
+    const apiURL = "https://api.giftedtech.web.id/api/download/dlmp4?apikey=gifted&url=" + url;
 
     const response = await axios.get(apiURL);
     if (!response.data.success) {
@@ -78,7 +78,7 @@ cmd({
 
     const video = results.videos[0];
     const url = video.url;
-    const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
+    const apiURL = "https://api.giftedtech.web.id/api/download/dlmp3?apikey=gifted&url=" + url;
 
     const response = await axios.get(apiURL);
     if (!response.data.success) {
