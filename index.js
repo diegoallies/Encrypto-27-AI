@@ -113,31 +113,9 @@ console.log("Subzero Session downloaded ✅")
   
   let up = `*Hi Owner😇, Congrats SubZero Connected Successfully! 🚀* \n\n> Light, Cold, Icy, Fast & Rich Loaded With Features, SubZero W.A Bot.\n\n *Thanks for using SUBZERO-MD ❄️* \n\n> Join WhatsApp Channel :- 🛠️\n \nhttps://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D\n\n- *ყσµɾ ɓσƭ ρɾεƒเא ➜*  ${prefix}\n\nDont forget to  star our repo☺ \n\nhttps://github.com/mrfrank-ofc/SUBZERO-MD\n\n> © 🎐ᴘϙᴡᴇʀᴇᴅ ʙʏ ᴍʀ ꜰʀᴀɴᴋ ᴏꜰᴄ ⚡`;
   
-  /*conn.sendMessage(conn.user.id, { image: { url: `https://i.postimg.cc/JzbX9nvW/In-Shot-20250117-062740593.jpg` }, caption: up })
+  conn.sendMessage(conn.user.id, { image: { url: `https://i.postimg.cc/JzbX9nvW/In-Shot-20250117-062740593.jpg` }, caption: up })
   }
   })
-*/
-  
-  conn.sendMessage(
-            from,
-            {
-                image: { url: `https://i.postimg.cc/JzbX9nvW/In-Shot-20250117-062740593.jpg` },
-                caption: up,
-                contextInfo: {
-                    mentionedJid: [m.sender],
-                    forwardingScore: 999,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363304325601080@newsletter',
-                        newsletterName: '𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 ✅ ',
-                        serverMessageId: 143
-                    }
-                }
-            },
-            { quoted: mek }
-        );
-
-        
   
  conn.ev.on('creds.update', saveCreds)  
     
