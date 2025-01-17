@@ -118,7 +118,7 @@ console.log("Subzero Session downloaded ✅")
   })
 */
   
-  await conn.sendMessage(
+  conn.sendMessage(
             from,
             {
                 image: { url: `https://i.postimg.cc/JzbX9nvW/In-Shot-20250117-062740593.jpg` },
@@ -138,7 +138,7 @@ console.log("Subzero Session downloaded ✅")
         );
 
         // Send audio //
-        await conn.sendMessage(from, { 
+        conn.sendMessage(from, { 
             audio: { url: 'https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
