@@ -8,7 +8,7 @@ const {
 cmd({
   'pattern': "rcolor",
   'react': "🎨",
-  'alias':"randomcolour"
+  'alias':"randomcolour",
   'desc': "Generate a random color with name and code.",
   'category': "utility",
   'filename': __filename
