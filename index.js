@@ -137,12 +137,7 @@ console.log("Subzero Session downloaded ✅")
             { quoted: mek }
         );
 
-        // Send audio //
-        await conn.sendMessage(from, { 
-            audio: { url: 'https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3' },
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
+        
   
  conn.ev.on('creds.update', saveCreds)  
     
