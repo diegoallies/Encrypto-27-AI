@@ -28,8 +28,8 @@ cmd({
     const firstResult = searchResults.videos[0];
     const videoUrl = firstResult.url;
 
-    const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${videoUrl}`;
-    const response = await axios.get(apiUrl);
+    const apiUrl = `https://rubenbot-subzero-api.hf.space/download/ytmp3?url=${videoUrl}`;
+    const response = await axios.get(apiUrl);// https://api.davidcyriltech.my.id/download/ytmp3?url=
     if (!response.data.success) {
       return reply(`❌ Failed to fetch audio for "${searchQuery}".`);
     }
