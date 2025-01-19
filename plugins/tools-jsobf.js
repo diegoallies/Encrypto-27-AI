@@ -3,7 +3,7 @@ const config = require('../config');
 const { cmd, commands } = require('../command');
 const { fetchJson } = require('../lib/functions');
 
-cmd({
+/*cmd({
   pattern: 'obfuscate',
   alias: ['obf'],
   react: '🦑',
@@ -59,4 +59,21 @@ cmd({
     console.error('Obfuscation error:', error);
     reply(`Failed to obfuscate code: ${error.message}`);
   }
+});
+*/
+cmd({
+pattern: 'base64',
+desc: 'Convert text to base64.',
+category: 'tools',
+react: '❣️',
+filename: __filename
+}, async (conn, mek, m, { from, text, reply }) => {
+const api = 'https://api.giftedtech.web.id/api/tools/ebase?apikey=gifted&query=';
+try {
+const res = await fetch(api + encodeURIComponent(text));
+const json = await res.json();
+reply(`Base64: ${json.result}`);
+} catch (error) {
+reply(`Error: ${error.message}`);
+}
 });
