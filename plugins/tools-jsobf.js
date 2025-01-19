@@ -5,12 +5,13 @@ const { fetchJson } = require('../lib/functions');
 
 
 cmd({
-pattern: 'base64',
+pattern: 'base64 (.*)',
 desc: 'Convert text to base64.',
 category: 'tools',
-react: '❣️',
+react: '🖤',
 filename: __filename
-}, async (conn, mek, m, { from, text, reply }) => {
+}, async (conn, mek, m, { from, reply }) => {
+const text = m.match[1];
 const api = 'https://api.giftedtech.web.id/api/tools/ebase?apikey=gifted&query=';
 try {
 const res = await fetch(api + encodeURIComponent(text));
@@ -21,15 +22,14 @@ reply(`Error: ${error.message}`);
 }
 });
 
-
-
 cmd({
-pattern: 'debase64',
+pattern: 'debase64 (.*)',
 desc: 'Decode base64 to normal text.',
 category: 'tools',
 react: '💞',
 filename: __filename
-}, async (conn, mek, m, { from, text, reply }) => {
+}, async (conn, mek, m, { from, reply }) => {
+const text = m.match[1];
 const api = 'https://api.giftedtech.web.id/api/tools/dbase?apikey=gifted&query=';
 try {
 const res = await fetch(api + encodeURIComponent(text));
@@ -39,7 +39,6 @@ reply(`Decoded: ${json.result}`);
 reply(`Error: ${error.message}`);
 }
 });
-
 
 
 /*cmd({
