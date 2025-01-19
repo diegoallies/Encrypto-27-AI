@@ -270,7 +270,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`Error: ${e.message}`);
     }
 });
-
+*/
 //===
 /*╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
     ⭐ＰＲＯＪＥＣＴ ＮＡＭＥ:
@@ -291,12 +291,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 
 
-const {
-  cmd,
-  commands
-} = require('../command');
-const axios = require('axios');
-cmd({
+
   'pattern': "img2",
   'alias': ["image", "pinterest", "pinimg"],
   'react': '🖼️',
