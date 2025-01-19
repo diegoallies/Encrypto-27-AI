@@ -4,14 +4,15 @@ const { cmd, commands } = require('../command');
 const { fetchJson } = require('../lib/functions');
 
 
+Here's a simplified command:
+
 cmd({
-pattern: 'base64 (.*)',
+pattern: 'base64 ?(.*)',
 desc: 'Convert text to base64.',
 category: 'tools',
-react: '🖤',
+react: '💘',
 filename: __filename
-}, async (conn, mek, m, { from, reply }) => {
-const text = m.match[1];
+}, async (conn, mek, m, { from, text, reply }) => {
 const api = 'https://api.giftedtech.web.id/api/tools/ebase?apikey=gifted&query=';
 try {
 const res = await fetch(api + encodeURIComponent(text));
