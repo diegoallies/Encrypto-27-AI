@@ -4,7 +4,6 @@ const { cmd, commands } = require('../command');
 const { fetchJson } = require('../lib/functions');
 
 
-Here's a simplified command:
 
 cmd({
 pattern: 'base64 ?(.*)',
