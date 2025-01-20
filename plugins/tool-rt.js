@@ -44,7 +44,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ─────────────
 
   \`\`\` USAGE EXAMPLE\`\`\`
-      \ `.ringtone\` Querky
+      \`.ringtone\` Querky
 
 
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʙᴢᴇʀᴏ ʙᴏᴛ`;
