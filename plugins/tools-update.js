@@ -5,7 +5,7 @@ const { cmd } = require('../command');
 
 cmd({
   pattern: "update",
-  react: "🔄",
+  react: "🗜️",
   desc: "Update bot",
   category: "system",
   use: '.update',
@@ -17,15 +17,13 @@ cmd({
     if (!fs.existsSync('./.git')) {
       console.log("Initializing git repository...");
       execSync('git init');
-    }
-
-    console.log("Checking if remote is already present...");
-    const remotes = execSync('git remote -v').toString();
-    if (!remotes.includes('origin')) {
-      console.log("Adding remote...");
       execSync('git remote add origin https://github.com/mrfrank-ofc/SUBZERO-MD.git');
     } else {
-      console.log("Remote already exists. Skipping addition.");
+      console.log("Checking existing remotes...");
+      const remotes = execSync('git remote').toString().split('\n').filter(r => r.trim());
+      if (!remotes.includes('origin')) {
+        execSync('git remote add origin https://github.com/mrfrank-ofc/SUBZERO-MD.git');
+      }
     }
 
     console.log("Fetching updates...");
