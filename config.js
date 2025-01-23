@@ -42,7 +42,7 @@ CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️�
 DELETE_LINKS: process.env.DELETE_LINKS || "true",
 // automatic delete links witho remove member 
 
-OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "27732788702",
 // Set Owner Name
 
 OWNER_NAME: process.env.OWNER_NAME || "ᴍʀ ꜰʀᴀɴᴋ ᴏꜰᴄ",
@@ -123,7 +123,7 @@ _____/\\\\\\\\\\\____/\\\________/\\\__/\\\\\\\\\\\\\____/\\\\\\\\\\\\\\\__/\\\\
 ⭐ 𝐂𝐑𝐄𝐀𝐓𝐎𝐑        ➜ DARRELL MUCHERI
 ⭐ 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 𝐃𝐀𝐓𝐄   ➜ 15 DEC 2024 (12.01 AM)
 ⭐ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄       ➜ JAVASCRIPT & NODEJS
-⭐ 𝐂𝐎𝐍𝐓𝐀𝐂𝐓        ➜ +263719647303
+⭐ 𝐂𝐎𝐍𝐓𝐀𝐂𝐓        ➜ +27732788702
 
 
 */

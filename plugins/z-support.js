@@ -113,7 +113,7 @@ https://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D
 https://chat.whatsapp.com/InsR5qk3cBsG2781A6uxcO
 
 \` Frank OFC\` *Dev🧑‍💻*
-wa.me/263719647303?text=Support!
+wa.me/27732788702?text=Support!
 
 ⟣──────────────────⟢
 
