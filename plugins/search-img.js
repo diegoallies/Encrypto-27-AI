@@ -113,7 +113,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 caption: `
 *💗 Image ${i + 1} from your search! 💗*
 
- *©  ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ sᴜʙᴢᴇʀᴏ! 👾*
+ *©  ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ eɴᴄʀʏᴘᴛᴏ! 👾*
 
 > ❄️ ENCRYPTO BOT ❄️`
 }, { quoted: mek });

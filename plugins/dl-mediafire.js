@@ -76,7 +76,7 @@ console.log(apiUrl);
             document: { url: downloadLink },
             mimetype: mimeType,
             fileName: fileName,
-            caption: `📦 *File Name:* ${fileName}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʙᴢᴇʀᴏ ᴍᴅ`
+            caption: `📦 *File Name:* ${fileName}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ eɴᴄʀʏᴘᴛᴏ ᴍᴅ`
           }, { quoted: m });
           return;
         } else {

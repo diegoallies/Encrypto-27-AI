@@ -47,7 +47,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
       \`.ringtone\` Querky
 
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʙᴢᴇʀᴏ ʙᴏᴛ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ eɴᴄʀʏᴘᴛᴏ ʙᴏᴛ`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
