@@ -232,7 +232,7 @@ https://github.com/diegoallies/Encrypto-27-AI
 ──────────────────
 '`;
 
-        await conn.sendMessage(from, { image: { url: `https://i.postimg.cc/yNf7rQFw/prn.jpg` }, caption: dec, contextInfo: { mentionedJid: [m.sender], forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363304325601080@newsletter', newsletterName: '『 sᴜʙᴢᴇʀᴏ ᴍᴅ 』', serverMessageId: 143 } } }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: `https://i.postimg.cc/yNf7rQFw/prn.jpg` }, caption: dec, contextInfo: { mentionedJid: [m.sender], forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363304325601080@newsletter', newsletterName: '『 eɴᴄʀʏプト ᴍᴅ 』', serverMessageId: 143 } } }, { quoted: mek });
 
         // Send audio
         await conn.sendMessage(from, {

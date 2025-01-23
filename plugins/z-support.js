@@ -93,7 +93,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 let dec = `    
 ⟣──────────────────⟢
-▧ *ᴄʀᴇᴀᴛᴏʀ* : *ᴍʀ ғʀᴀɴᴋ (🇿🇼)*
+▧ *ᴄʀᴇᴀᴛᴏʀ* : *ᴅᴜᴅᴀs (🇿🇼)*
 ▧ *ᴍᴏᴅᴇ* : *${config.MODE}*
 ▧ *ᴘʀᴇғɪx* : *${config.PREFIX}*
 ▧ *ʀᴀᴍ* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
@@ -162,7 +162,7 @@ let dec = `
 ⟣──────────────────⟢
 ▧ \`ENCRYPTO MD W.A BOT\`
 
-- ᴛʜɪs ʙᴏᴛ ɪs sᴜʙᴊᴇᴄᴛᴇᴅ ᴛᴏ ᴍʀ ғʀᴀɴᴋ & ʜɪs ᴛᴇᴀᴍ ʜᴀʀᴅ ᴡᴏʀᴋ
+- ᴛʜɪs ʙᴏᴛ ɪs sᴜʙᴊᴇᴄᴛᴇᴅ ᴛᴏ ᴅᴜᴅᴀs & ʜɪs ᴛᴇᴀᴍ ʜᴀʀᴅ ᴡᴏʀᴋ
 - ɪᴛ ɪs ɪsɴᴛ ᴀ ɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ʙᴏᴛ ᴛʜᴀᴛ ᴏɴᴇ ᴄᴀɴ ᴄʟᴏɴᴇ
 - ғᴏʀ ᴍᴏʀᴇ ᴠɪsɪᴛ : https://github.com/mrfrank-ofc
 
