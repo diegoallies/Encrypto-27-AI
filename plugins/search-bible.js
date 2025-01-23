@@ -9,9 +9,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -246,7 +246,7 @@ cmd({
                 `📜 *Bible Verse Found!*\n\n` +
                 `📖 *Reference:* ${ref}\n` +
                 `📚 *Text:* ${text}\n\n` +
-                `🗂️ *Translation:* ${translation_name}\n\n © SUBZERO BIBLE`
+                `🗂️ *Translation:* ${translation_name}\n\n © ENCRYPTO BIBLE`
             );
         } else {
             reply("❌ *Verse not found.* Please check the reference and try again.");

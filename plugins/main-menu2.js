@@ -10,9 +10,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -478,7 +478,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3' },
+            audio: { url: 'https://github.com/diegoallies/Encrypto-27-AI-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });

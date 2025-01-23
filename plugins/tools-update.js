@@ -13,17 +13,17 @@ cmd({
   filename: __filename 
 }, async (conn, mek, m, { from, reply }) => { 
   try { 
-    await conn.sendMessage(from, { text: '📡 Please wait... Checking for SUBZERO updates...' }, { quoted: mek });
+    await conn.sendMessage(from, { text: '📡 Please wait... Checking for ENCRYPTO updates...' }, { quoted: mek });
     
     if (!fs.existsSync('./.git')) { 
       console.log("Initializing git repository..."); 
       execSync('git init'); 
-      execSync('git remote add origin https://github.com/mrfrank-ofc/SUBZERO-MD.git'); 
+      execSync('git remote add origin https://github.com/diegoallies/Encrypto-27-AI.git'); 
     } else { 
       console.log("Checking existing remotes..."); 
       const remotes = execSync('git remote').toString().split('\n').filter(r => r.trim()); 
       if (!remotes.includes('origin')) { 
-        execSync('git remote add origin https://github.com/mrfrank-ofc/SUBZERO-27-MD.git'); 
+        execSync('git remote add origin https://github.com/mrfrank-ofc/ENCRYPTO-27-MD.git'); 
       } 
     }
     
@@ -47,13 +47,13 @@ cmd({
     const originCommit = execSync(`git rev-parse origin/${defaultBranch}`).toString().trim();
     
     if (localCommit === originCommit) { 
-      await conn.sendMessage(from, { text: '*✅ Subzero Bot is already up to date!*' }, { quoted: mek });
+      await conn.sendMessage(from, { text: '*✅ Encrypto Bot is already up to date!*' }, { quoted: mek });
     } else { 
       console.log("Resetting to origin state..."); 
       execSync(`git reset --hard origin/${defaultBranch}`); 
       console.log("Pulling updates..."); 
       execSync(`git pull origin ${defaultBranch}`); 
-      await conn.sendMessage(from, { text: '*✅ Subzero Bot updated successfully!*' }, { quoted: mek });
+      await conn.sendMessage(from, { text: '*✅ Encrypto Bot updated successfully!*' }, { quoted: mek });
     }
   } catch (error) { 
     console.error(error); 

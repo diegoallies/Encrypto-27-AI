@@ -10,9 +10,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -223,7 +223,7 @@ const { sleep } = require('../lib/functions');
 
 cmd({
     pattern: "restart",
-    desc: "Restart the SubZero Md",
+    desc: "Restart the Encrypto Md",
     category: "owner",
     filename: __filename
 },
@@ -238,7 +238,7 @@ async (conn, mek, m, {
         }
 
         const { exec } = require("child_process");
-        reply("> Subzero Bot Restarting...");
+        reply("> Encrypto Bot Restarting...");
         await sleep(1500);
         exec("pm2 restart all");
     } catch (e) {

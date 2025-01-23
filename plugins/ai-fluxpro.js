@@ -11,9 +11,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -86,7 +86,7 @@ cmd({
       return reply(`*Usage:* ${command} <prompt>\n\n*Example:* ${command} cat`);
     }
 
-    await reply('> *Subzero Processing Image...*');
+    await reply('> *Encrypto Processing Image...*');
 
     const apiUrl = `https://api.davidcyriltech.my.id/flux?prompt=${encodeURIComponent(text)}`;
 

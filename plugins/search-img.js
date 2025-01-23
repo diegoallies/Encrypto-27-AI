@@ -9,7 +9,7 @@
      ＸＥＲＯ ＣＯＤＥＲＳ
      
     ⭐ ＯＵＲ ＷＥＢＳＩＴＥ
-     https://github.com/ZwSyntax/SUBZERO-MD
+     https://github.com/ZwSyntax/ENCRYPTO-MD
 
 © ＴＲＹ ＤＥＣＲＹＰＴＩＮＧ ＩＦ ＹＯＵ ＣＡＮ⚠
 
@@ -38,7 +38,7 @@ cmd({
   try {
     const _0x3207b0 = _0x12b1f7.join(" ");
     if (!_0x3207b0) {
-      return _0x2ac5cb("*Please provide search keywords for the image. Eg Subzero*");
+      return _0x2ac5cb("*Please provide search keywords for the image. Eg Encrypto*");
     }
     _0x2ac5cb("*🔍 Showing Results For - " + _0x3207b0 + "...*");
     const _0x2f5556 = 'https://rubenbot-subzero-api.hf.space/download/piniimg?text=' + encodeURIComponent(_0x3207b0);
@@ -115,7 +115,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
  *©  ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ sᴜʙᴢᴇʀᴏ! 👾*
 
-> ❄️ SUBZERO BOT ❄️`
+> ❄️ ENCRYPTO BOT ❄️`
 }, { quoted: mek });
 }
 

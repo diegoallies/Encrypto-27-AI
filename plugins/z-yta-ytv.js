@@ -16,7 +16,7 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let desc = `╭━❮◆ SUBZERO MD SONG DOWNLOADER ◆❯━╮
+let desc = `╭━❮◆ ENCRYPTO MD SONG DOWNLOADER ◆❯━╮
 
 ┃➤✰ 𝚃𝙸𝚃𝙻𝙴 : ${data.title}
 
@@ -30,7 +30,7 @@ let desc = `╭━❮◆ SUBZERO MD SONG DOWNLOADER ◆❯━╮
 ╰━━━━━━━━━━━━━━━⪼
 
 
-> © SUBZERO MD
+> © ENCRYPTO MD
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
 
@@ -63,7 +63,7 @@ const search = await yts(q)
 const data = search.videos[0]
 const url = data.url
 
-let des = `╭━❮◆ SUBZERO MD VIDEO DOWNLOADER ◆❯━╮
+let des = `╭━❮◆ ENCRYPTO MD VIDEO DOWNLOADER ◆❯━╮
 
 ┃➤✰ 𝚃𝙸𝚃𝙻𝙴 : ${data.title}
 
@@ -77,7 +77,7 @@ let des = `╭━❮◆ SUBZERO MD VIDEO DOWNLOADER ◆❯━╮
 ╰━━━━━━━━━━━━━━━⪼
 
 
-> © SUBZERO MD 
+> © ENCRYPTO MD 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:des},{quoted:mek});
 

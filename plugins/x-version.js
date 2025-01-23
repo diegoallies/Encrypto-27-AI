@@ -43,16 +43,16 @@ cmd({
     const packageName = require('../package.json');
     const currentVersion = packageName.version;
 
-    const apiUrl = 'https://raw.githubusercontent.com/mrfrank-ofc/SUBZERO-MD/master/package.json';
+    const apiUrl = 'https://raw.githubusercontent.com/mrfrank-ofc/ENCRYPTO-MD/master/package.json';
     const response = await axios.get(apiUrl);
     const data = response.data;
     const latestVersion = data.version;
 
     let message = '';
     if (currentVersion === latestVersion) {
-      message = `Your Subzero bot is up-to-date! 😊\n Current version is: ${currentVersion}`;
+      message = `Your Encrypto bot is up-to-date! 😊\n Current version is: ${currentVersion}`;
     } else {
-      message = `Your Subzero bot is outdated 😵!\n\n  Current version: ${currentVersion} \n Latest version: ${latestVersion}`;
+      message = `Your Encrypto bot is outdated 😵!\n\n  Current version: ${currentVersion} \n Latest version: ${latestVersion}`;
     }
 
    // await reply(message);
@@ -79,7 +79,7 @@ cmd({
         }, { quoted: mek });
 
     } catch (e) {
-        console.error("Error in Subzero checking Version:", e);
+        console.error("Error in Encrypto checking Version:", e);
         reply(`An error Occured Fetching Version 😕`);
     }
 });

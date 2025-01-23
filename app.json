@@ -1,6 +1,6 @@
 {
-  "name": "SUBZERO-MD",
-  "description": "A rich whatsapp bot by Mr Frank",
+  "name": "ENCRYPTO-MD",
+  "description": "A rich whatsapp bot by  Frank",
   "logo": "https://i.ibb.co/YkJyMRb/mrfrankofc.jpg",
   "keywords": ["subzero-bot"],
   "success_url": "/",
@@ -8,7 +8,7 @@
     "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Put the your SubZero session-id here.",
+      "description": "Put the your Encrypto session-id here.",
       "required": true,
       "value": ""
     },  
@@ -22,7 +22,7 @@
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> [❄️] SubZero MD Is Online ⚡"
+      "value": "> [❄️] Encrypto MD Is Online ⚡"
     },
     
     "PREFIX": {
@@ -79,7 +79,7 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SUBZERO VIEWED YOUR STATUS 🧸*"
+      "value": "*ENCRYPTO VIEWED YOUR STATUS 🧸*"
     }, 
 
     "OWNER_NAME": {

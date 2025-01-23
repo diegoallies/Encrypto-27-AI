@@ -1,1 +1,1 @@
-© SUBZERO MD W.A BOT ❄️
+© ENCRYPTO MD W.A BOT ❄️

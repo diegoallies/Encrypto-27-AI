@@ -1,1 +1,1 @@
-## SUBZERO W.A BOT ❄️
+## ENCRYPTO W.A BOT ❄️

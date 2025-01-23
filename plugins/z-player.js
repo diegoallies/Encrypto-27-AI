@@ -6,7 +6,7 @@
 */
 
 // Wanna Use My Codes???
-// Give Credits Yah, Mr Frank
+// Give Credits Yah,  Frank
 
 
 
@@ -31,7 +31,7 @@ cmd({
       return reply("*Please provide a video title or URL*");
     }
 
-    await reply("> SubZero Searching Video... Please Wait...");
+    await reply("> Encrypto Searching Video... Please Wait...");
     
     const results = await yts(query);
     if (!results.videos || results.videos.length === 0) {
@@ -42,7 +42,7 @@ cmd({
     const url = video.url;
     const apiURL = "https://api.davidcyriltech.my.id/youtube/mp4?url=" + url;
 
-    await reply("> SubZero Downloading Video... Please Wait...");
+    await reply("> Encrypto Downloading Video... Please Wait...");
 
     const response = await axios.get(apiURL);
     if (!response.data.success) {
@@ -50,7 +50,7 @@ cmd({
     }
 
     const downloadURL = response.data.result.download_url;
-    await reply("> SubZero Sending Video... Please Wait...");
+    await reply("> Encrypto Sending Video... Please Wait...");
     
     await conn.sendMessage(from, { video: { url: downloadURL }, mimetype: "video/mp4" }, { quoted: msg });
     
@@ -79,7 +79,7 @@ if (!query) {
 return reply("_Please provide an audio title or URL_");
 }
 
-await reply("> SubZero Searching Song... Please Wait...");
+await reply("> Encrypto Searching Song... Please Wait...");
 
 const results = await yts(query);
 if (!results.videos || results.videos.length === 0) {
@@ -90,7 +90,7 @@ const video = results.videos[0];
 const url = video.url;
 const apiURL = "https://api.davidcyriltech.my.id/youtube/mp3?url=" + url;
 
-await reply("> SubZero Searching For The Song...");
+await reply("> Encrypto Searching For The Song...");
 
 const response = await axios.get(apiURL);
 if (!response.data.success) {
@@ -98,7 +98,7 @@ if (!response.data.success) {
 }
 
 const downloadURL = response.data.result.download_url;
-await reply("> SubZero Sending Song Wait...");
+await reply("> Encrypto Sending Song Wait...");
 
 await conn.sendMessage(from, { audio: { url: downloadURL }, mimetype: 'audio/mpeg', ptt: false }, { quoted: msg });
 

@@ -13,9 +13,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -112,7 +112,7 @@ https://whatsapp.com/channel/0029VagQEmB002T7MWo3Sj1D
 \`GROUP\` 👥
 https://chat.whatsapp.com/InsR5qk3cBsG2781A6uxcO
 
-\`Mr Frank OFC\` *Dev🧑‍💻*
+\` Frank OFC\` *Dev🧑‍💻*
 wa.me/263719647303?text=Support!
 
 ⟣──────────────────⟢
@@ -138,9 +138,9 @@ await conn.sendMessage(
             { quoted: mek }
         );
 
-        // Send audio //https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3
-        await conn.sendMessage(from, { //https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/blob/main/audios/subzero-menu.mp3
-            audio: { url: 'https://github.com/mrfrank-ofc/SUBZERO-MD-DATABASE/raw/refs/heads/main/audios/subzero-theone.mp3' },
+        // Send audio //https://github.com/diegoallies/Encrypto-27-AI-DATABASE/raw/refs/heads/main/audios/subzero-menu.mp3
+        await conn.sendMessage(from, { //https://github.com/diegoallies/Encrypto-27-AI-DATABASE/blob/main/audios/subzero-menu.mp3
+            audio: { url: 'https://github.com/diegoallies/Encrypto-27-AI-DATABASE/raw/refs/heads/main/audios/subzero-theone.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
@@ -160,7 +160,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 let dec = `    
 ⟣──────────────────⟢
-▧ \`SUBZERO MD W.A BOT\`
+▧ \`ENCRYPTO MD W.A BOT\`
 
 - ᴛʜɪs ʙᴏᴛ ɪs sᴜʙᴊᴇᴄᴛᴇᴅ ᴛᴏ ᴍʀ ғʀᴀɴᴋ & ʜɪs ᴛᴇᴀᴍ ʜᴀʀᴅ ᴡᴏʀᴋ
 - ɪᴛ ɪs ɪsɴᴛ ᴀ ɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ʙᴏᴛ ᴛʜᴀᴛ ᴏɴᴇ ᴄᴀɴ ᴄʟᴏɴᴇ
@@ -168,7 +168,7 @@ let dec = `
 
 \`OFFICIAL REPO\` ‼️
 
-https://github.com/mrfrank-ofc/SUBZERO-MD
+https://github.com/diegoallies/Encrypto-27-AI
 
 
 \`CHANNEL\` 💙
@@ -219,17 +219,17 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 let dec = `    
 ⟣──────────────────⟢
-▧ \`SUBZERO MD W.A BOT\`
+▧ \`ENCRYPTO MD W.A BOT\`
 
 
-- SUBZERO WAS CREATED BY A JNR DEV IN ZIMBABWE CALLED DARRELL MUCHERI
+- ENCRYPTO WAS CREATED BY A JNR DEV IN ZIMBABWE CALLED DARRELL MUCHERI
 
 - HIT https://darrell-m.vercel.app
 
 ─────────────
 \`OFFICIAL REPO\` ‼️
 
-https://github.com/mrfrank-ofc/SUBZERO-MD
+https://github.com/diegoallies/Encrypto-27-AI
 
 
 \`CHANNEL\` 💙
@@ -283,17 +283,17 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 let dec = `    
 ⟣──────────────────⟢
-▧ \`SUBZERO MD W.A BOT\`
+▧ \`ENCRYPTO MD W.A BOT\`
 
 
-- SUBZERO WAS CREATED BY A JNR DEV IN ZIMBABWE CALLED DARRELL MUCHERI
+- ENCRYPTO WAS CREATED BY A JNR DEV IN ZIMBABWE CALLED DARRELL MUCHERI
 
 - HIT https://darrell-m.vercel.app
 
 ─────────────
 \`OFFICIAL REPO\` ‼️
 
-https://github.com/mrfrank-ofc/SUBZERO-MD
+https://github.com/diegoallies/Encrypto-27-AI
 
 
 \`CHANNEL\` 💙
@@ -370,16 +370,16 @@ cmd({
     const packageName = require('../package.json');
     const currentVersion = packageName.version;
 
-    const apiUrl = 'https://raw.githubusercontent.com/mrfrank-ofc/SUBZERO-MD/master/package.json';
+    const apiUrl = 'https://raw.githubusercontent.com/mrfrank-ofc/ENCRYPTO-MD/master/package.json';
     const response = await axios.get(apiUrl);
     const data = response.data;
     const latestVersion = data.version;
 
     let message = '';
     if (currentVersion === latestVersion) {
-      message = `Subzero bot is official ! 😊\n Thanks For supporting us your version is ${currentVersion}`;
+      message = `Encrypto bot is official ! 😊\n Thanks For supporting us your version is ${currentVersion}`;
     } else {
-      message = `This Bot Is Cloned From SubZero Md😵!`;
+      message = `This Bot Is Cloned From Encrypto Md😵!`;
     }
 
    // await reply(message);
@@ -406,9 +406,9 @@ cmd({
         }, { quoted: mek });
 
     } catch (e) {
-        console.error("Error in Subzero checking Version:", e);
+        console.error("Error in Encrypto checking Version:", e);
         reply(`An error Occured Fetching Version 😕`);
     }
 });
 */
-//  SUBZERO SC BY MR FRANK
+//  ENCRYPTO SC BY MR FRANK

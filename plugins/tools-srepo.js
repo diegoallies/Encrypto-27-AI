@@ -9,9 +9,9 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$$  |$$$$$$$$\ \$$$$$$$\ $$ |      \$$$$$$  |
  \______/  \______/ \_______/ \________| \_______|\__|       \______/
 
-Project Name : SubZero MD
-Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Project Name : Encrypto MD
+Creator      : Darrell Mucheri (  Frank OFC )
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 
@@ -254,14 +254,14 @@ cmd({
     const _0x1710d7 = "https://api.github.com/repos/" + _0x4316bb;
     const _0x5e6198 = await axios.get(_0x1710d7);
     const _0x3b32a2 = _0x5e6198.data;
-    let _0x5966d9 = "📁*GITHUB REPO INFO BY SUBZERO MD*📁\n\n";
+    let _0x5966d9 = "📁*GITHUB REPO INFO BY ENCRYPTO MD*📁\n\n";
     _0x5966d9 += "📌 *ɴᴀᴍᴇ*: " + _0x3b32a2.name + "\n";
     _0x5966d9 += "🔗 *ᴜʀʟ*: " + _0x3b32a2.html_url + "\n";
     _0x5966d9 += "📝 *ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*: " + _0x3b32a2.description + "\n";
     _0x5966d9 += "⭐ *ꜱᴛᴀʀꜱ*: " + _0x3b32a2.stargazers_count + "\n";
     _0x5966d9 += "🍴 *ꜰᴏʀᴋꜱ*: " + _0x3b32a2.forks_count + "\n";
     _0x5966d9 += "\n";
-    _0x5966d9 += "> *© Powered By SubZero*\n";
+    _0x5966d9 += "> *© Powered By Encrypto*\n";
     await _0x50251e.sendMessage(_0x4efb12, {
       'text': _0x5966d9
     }, {
